@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "A tool to test/document your APIs"
   s.description = "Coming soon"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 4.0.2"
   s.add_dependency "faraday"

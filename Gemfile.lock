@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    frisk (0.0.1)
+    frisk (0.0.1.alpha)
       faraday
       faraday_middleware
       rails (~> 4.0.2)

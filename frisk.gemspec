@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 4.0.2"
+  s.add_dependency "angularjs-rails"
   s.add_dependency "faraday"
   s.add_dependency "faraday_middleware"
 end

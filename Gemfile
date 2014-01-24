@@ -1,16 +1,11 @@
 source "https://rubygems.org"
 
-source 'https://rubygems.org'
+gemspec
 
-group :development do
+group :development, :test do
+  gem 'rspec-rails'
+  gem "teaspoon"
   gem 'pry'
   gem 'pry-rescue'
 end
 
-group :test do
-  gem 'rspec-rails'
-  gem 'guard'
-  gem 'guard-rspec'
-end
-
-gemspec

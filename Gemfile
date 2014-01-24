@@ -13,4 +13,8 @@ group :test do
   gem 'guard-rspec'
 end
 
+group :development, :test do
+  gem "teaspoon"
+end
+
 gemspec

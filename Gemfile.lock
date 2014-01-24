@@ -4,7 +4,7 @@ PATH
     frisk (0.0.1.alpha)
       faraday
       faraday_middleware
-      rails (~> 4.0.2)
+      railties (>= 3.2.5, < 5)
 
 GEM
   remote: https://rubygems.org/
@@ -146,4 +146,5 @@ DEPENDENCIES
   guard-rspec
   pry
   pry-rescue
+  rails
   rspec-rails

@@ -1,18 +1,11 @@
 source "https://rubygems.org"
 
-group :development do
+gemspec
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem "teaspoon"
   gem 'pry'
   gem 'pry-rescue'
 end
 
-group :test do
-  gem 'rspec-rails'
-  gem 'guard'
-  gem 'guard-rspec'
-end
-
-group :development, :test do
-  gem "teaspoon"
-end
-
-gemspec

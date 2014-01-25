@@ -5,7 +5,7 @@ PATH
       angularjs-rails
       faraday
       faraday_middleware
-      rails (~> 4.0.2)
+      railties (>= 3.2.5, < 5)
 
 GEM
   remote: https://rubygems.org/
@@ -121,5 +121,6 @@ DEPENDENCIES
   frisk!
   pry
   pry-rescue
+  rails
   rspec-rails
   teaspoon

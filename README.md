@@ -1,6 +1,7 @@
 Frisk
 =====
 
+[![Build Status](https://travis-ci.org/code-mancers/frisk.png?branch=master)](https://travis-ci.org/code-mancers/frisk)
 
 ## What's frisk ?
 

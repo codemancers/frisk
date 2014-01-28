@@ -1,13 +1,14 @@
 source "https://rubygems.org"
 
-gemspec
-
-#For dummy app
-gem "rails"
-
-group :development, :test do
-  gem 'rspec-rails'
-  gem "teaspoon"
+group :development do
   gem 'pry'
   gem 'pry-rescue'
+  gem 'guard'
+  gem 'guard-rspec'
 end
+
+gem 'rake'
+gem 'rspec'
+gem 'rack-test'
+
+gemspec

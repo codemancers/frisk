@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+root = File.expand_path('../../lib', __FILE__)
+$:.unshift(root) unless $:.include?(root)
+
+require 'frisk/app'
+
+Frisk::App.run!

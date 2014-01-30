@@ -3,4 +3,11 @@ require "rspec/core/rake_task"
 
 RSpec::Core::RakeTask.new
 
-task :default => [:spec]
+task :karma do
+  sh 'npm install'
+  sh 'npm test'
+end
+
+task :test => [:spec, :karma]
+
+task :default => [:test]

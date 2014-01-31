@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Frisk</title>
+  <%= css :app %>
+</head>
+<body>
+<%= yield %>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+  <%= js :app %>
+</body>
+</html>

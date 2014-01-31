@@ -19,3 +19,10 @@ Add this to your Gemfile and run `bundle install`:
 
 This will install the gem and mount frisk on `/frisk`
 path of your application.
+
+## Development
+
+1. Clone the repo
+2. `bundle install`
+3. Write code and tests
+4. `bundle exec rake` to run RSpec and Karma JS test runner

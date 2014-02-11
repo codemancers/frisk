@@ -1,13 +1,30 @@
 require 'sinatra'
 require 'frisk/http_client'
+require 'sinatra/assetpack'
+require 'coffee-script'
 
 module Frisk
   class App < ::Sinatra::Application
     set :root, File.expand_path(File.dirname(__FILE__) + "/../../app")
     set :static, true
-    set :public_dir, Proc.new { "#{root}/assets" }
     set :views, Proc.new { "#{root}/views" }
     set :show_exceptions, false
+
+    register ::Sinatra::AssetPack
+
+    assets {
+      serve '/js',     from: 'assets/javascripts'
+      serve '/css',    from: 'assets/stylesheets'
+
+      js :app, 'js/app.js', [
+        '/js/angular.min.js',
+        '/js/frisk.js'
+      ]
+
+      css :app, 'css/app.css', [
+        '/css/frisk.css'
+      ]
+    }
 
     before do
       content_type :json
@@ -15,7 +32,7 @@ module Frisk
 
     get '/' do
       content_type :html
-      send_file settings.public_dir + '/index.html'
+      erb :index
     end
 
     post '/requests' do

@@ -21,4 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sinatra"
   spec.add_dependency "faraday"
   spec.add_dependency "faraday_middleware"
+  spec.add_dependency "sinatra-assetpack"
+  spec.add_dependency "coffee-script"
 end

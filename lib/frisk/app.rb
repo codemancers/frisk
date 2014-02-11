@@ -18,7 +18,7 @@ module Frisk
 
       js :app, 'js/app.js', [
         '/js/angular.min.js',
-        '/js/frisk.js'
+        '/js/app/frisk.js'
       ]
 
       css :app, 'css/app.css', [

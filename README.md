@@ -5,20 +5,26 @@ Frisk
 
 ## What's frisk ?
 
-Frisk is a mountable Rails engine which
+Frisk tries to fill the communication gap between developers that develop APIs
+and those who write code to consume those APIs. With Frisk, you can tell
+which APIs are red(broken), how to construct correct API requests and what the
+expected responses are.
 
-* documents your API
-* acts as your API health check
-* gives you an API explorer
+Frisk will let you record API requests and responses and create runnable
+examples out of those which become your living documentation in development
+environment.
+
+To sum it up, Frisk is your
+
+* API doc
+* API health check
+* API explorer
 
 ## Installation
 
-Add this to your Gemfile and run `bundle install`:
+    gem install frisk
 
-    gem 'frisk'
-
-This will install the gem and mount frisk on `/frisk`
-path of your application.
+This gives you the executable `frisk`, which you can run to start the app.
 
 ## Development
 
